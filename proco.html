@@ -1,0 +1,272 @@
+
+
+
+<html>
+<head>
+<p id="firstname">
+<marquee direction="right" >K J SOMAIYA INSTITUTE OF ENGINEERING AND INFORMATION TECHNOLOGY</marquee>
+</p>
+<title>proctor form</title>
+<style>
+
+      .container{
+        width:700px;
+        margin: 0px auto;
+        
+        padding: 5px;
+        border:2px solid black;
+    }
+    h1{
+    background-color:#33FFFC;
+  color:#C0C0C0;
+  }
+  #firstname {
+   
+    color:black;
+    
+}
+  
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.s{
+ background-color:#FAFAD2;
+text-align: center;
+}
+
+    input[type=text]
+  {
+    width:30px;
+  }
+body{
+    background-color:#007fc0;
+}
+.largest input[type=text{
+    width:120px;
+}
+</style>
+  
+   <script type="text/javascript">
+   
+      function validate()
+      {
+      
+         if( document.myForm.sem.value == "" )
+         {
+            alert( "enter semester details" );
+            document.myForm.sem.focus() ;
+            return false;
+         }
+         
+         if( document.myForm.class1.value == "" )
+         {
+            alert( "Please provide your class details" );
+            document.myForm.class1.focus() ;
+            return false;
+         }
+         
+         if( document.myForm.rollno.value == "" )
+		 {
+                    alert( "Please provide your roll");
+            document.myForm.rollno.focus() ;
+            return false;
+         }
+         
+         if( document.myForm.nameofstudent.value =="" )
+		 {
+		     alert( "Please provide your name");
+            document.myForm.nameofstudent.focus() ;
+            return false;
+         }
+		  if( document.myForm.Dob.value =="" )
+		 {
+		     alert( "Please provide your date of birth");
+            document.myForm.Dob.focus() ;
+            return false;
+         }
+		  if( document.myForm.BG.value =="" )
+		 {
+		     alert( "Please provide your blood group details");
+            document.myForm.BG.focus() ;
+            return false;
+         }
+		  if( document.myForm.address1.value =="" )
+		 {
+		     alert( "Please provide your temporary address");
+            document.myForm.address1.focus() ;
+            return false;
+         }
+          if( document.myForm.address2.value =="" )
+		 {
+		     alert( "Please provide your permanent address");
+            document.myForm.address2.focus() ;
+            return false;
+         }
+		  if( document.myForm.PF.value =="" )
+		 {
+		     alert( "Please provide your father phone no");
+            document.myForm.PF.focus() ;
+            return false;
+         }
+         if( document.myForm.PM.value =="" )
+		 {
+		     alert( "Please provide your mother phone no");
+            document.myForm.PM.focus() ;
+            return false;
+         }
+		   if( document.myForm.PS.value =="" )
+		 {
+		     alert( "Please provide your phone no");
+            document.myForm.PS.focus() ;
+            return false;
+         }
+		 if( document.myForm.FO.value =="" )
+		 {
+		     alert( "Please provide your father occupation details");
+            document.myForm.FO.focus() ;
+            return false;
+         }
+		 if( document.myForm.MO.value =="" )
+		  {
+		     alert( "Please provide your mother occupation details");
+            document.myForm.MO.focus() ;
+            return false;
+         }
+		  if( document.myForm.H.value =="" )
+		   {
+		     alert( "Please provide your hobby ");
+            document.myForm.H.focus() ;
+            return false;
+         }
+		  
+		
+		
+         
+         
+         
+      }
+       
+
+      </script>
+</head>
+
+<body>
+<div class="container">
+<div class="largest">
+
+<h3 align="center" class="s"><i>Department of<input type="text" class="large" placeholder="Engineering"> Engineering</i></h3>
+<h2 align="center" class="s"><u>STUDENT INFORMATION FORM</u></h2>
+
+
+<form action="server.php" method="post" name="myForm" onsubmit="return(validate());">
+<h3 class="s">upload photo</h5>
+<input type="file" name="upload photo" value="upload photo" id="fileToUpload" class="button">
+
+<p>SEM:<input type="text class="large" name="sem" placeholder="Semester">____________________________________CLASS:<input type="text" class="large" name="class1" placeholder="Class">___________________ROLLNO:<input type="text" class="large" name="rollno"placeholder="Rollno"  ></p>
+<fieldset>
+<legend> Personal Details</legend>
+<font color="red"><label>Name of the Student:</label><input type="text" class="large" name="nameofstudent" placeholder="Name">______________________________Date of Birth:<input type="text" class="large" name="Dob" placeholder="Date of Birth">_____________Blood Group:<input type="text" class="large" name="BG"><br><br>
+Temporary address:<textarea name="address1" rows="3" cols="45"></textarea>______________________________Permanent address:<textarea name="adresss2" rows="3" cols="45"></textarea><<br><br>
+
+Phone No of Father:<input type="text"class="large" class="large" name="PF"placeholder="mobile no">______________________________Mother:<input type="text" class="large" name="PM" placeholder="mobile no">______________________________Student:<input type="text" class="large" name="PS" placeholder="mobile no"><br><br>
+Father's Occupation:<input type="text" class="large" name="FO"placeholder="Occupation">______________________________Mother's Occupation:<input type="text" class="large" name="MO" placeholder="Occupation"><br><br>
+Hobbies:<input type="text" class="large" name="H" placeholder="hobbies"></font>
+</fieldset>
+<br>
+</div>
+<table border="2" style="width:50%" >
+<caption>Result: Final Marks (with percentage):</caption>
+<tr>
+<td> </td>
+<td>SEM I</td>
+<td>SEM II</td>
+<td>SEM III</td>
+<td>SEM IV</td>
+<td>SEM V</td>
+<td>SEM VI</td>
+<td>SEM VII</td>
+<td>SEM VIII</td>
+<tr>
+<tr>
+<td>CGPA</td><td><input type="text"name="c1" placeholder="CGPA sem1" ></td><td><input type="text" name="c2" placeholder="CGPA sem2" ></td><td><input type="text" name="c3"placeholder="CGPA sem3" ></td><td><input type="text" name="c4"placeholder="CGPA sem4" ></td><td><input type="text" name="c5"placeholder="CGPA sem5" ></td><td><input type="text" name="c6" placeholder="CGPA sem6" ></td><td><input type="text" name="c7"placeholder="CGPA sem7" ></td><td><input type="text" name="c8" placeholder="CGPA sem8" ></td>
+</tr>
+</table>
+<table border="2">
+<caption>KT information: Write name of subject(s) only</caption>
+<tr>
+<td> </td>
+<td>SEM I</td>
+<td>SEM II</td>
+<td>SEM III</td>
+<td>SEM IV</td>
+<td>SEM V</td>
+<td>SEM VI</td>
+<td>SEM VII</td>
+<td>SEM VIII</td>
+<tr>
+<tr>
+<td>First attempt</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+</tr>
+<tr>
+<td>Second attempt</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+</tr>
+<tr>
+<td>Third attempt</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+</tr>
+<tr>
+<td>Four attempt</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+</tr>
+</table>
+<table border="5">
+<caption>Defaulter's subject wise/total attendance details:</caption>
+<tr>
+<td> </td>
+<td>SEM I</td>
+<td>SEM II</td>
+<td>SEM III</td>
+<td>SEM IV</td>
+<td>SEM V</td>
+<td>SEM VI</td>
+<td>SEM VII</td>
+<td>SEM VIII</td>
+<tr>
+<tr>
+<td>Attendance after First defaulter list </td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+</tr>
+<tr>
+<td>SAttendance after Second defaulter list </td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+</tr>
+<tr>
+<td>Attendance after Third defaulter list </td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+</tr>
+<tr>
+<td>Attendance after Final defaulter list </td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+</tr>
+</table>
+<fieldset>
+<legend>About You</legend>
+<font color="red">Area of Interest:<textarea type="text" rows="2" cols="50"></textarea><br><br>
+Goals/Future Plans (After BE):<textarea type="text" rows="2" cols="50"></textarea><br><br>
+Achievements:<textarea type="text" rows="2" cols="50"></textarea><br><br>
+activities:<textarea type="text" rows="2" cols="50"></textarea></font><br>
+</fieldset>
+
+
+<center><input type="submit" value="Submit" class="button">
+<input type="reset" value="Cancel" class="button"></center>
+
+<input type="button" class="button" value="Print this page" align="left" color="red" onClick="window.print()">
+</form>
+</div>
+</body>
+</html>
